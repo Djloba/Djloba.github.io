@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="pmain.css" />
+    <script src="pmain.js"></script>
+    <style>
+        .loader {
+            position: relative;
+
+        }
+
+        .loader span {
+            position: relative;
+            font-size: 1.5rem;
+            color: #fff;
+            display: inline-block;
+            /* text-transform: uppercase; */
+            animation: animate 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+            animation-play-state: paused;
+        }
+
+        .loader:hover span {
+            animation-play-state: running;
+
+        }
+
+        .loader-service span {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 933;
+            color: #40c3ff;
+            display: inline-block;
+            /* text-transform: uppercase; */
+            animation: animate 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+            /* animation-play-state: paused; */
+        }
+
+        @keyframes animate {
+            0%,
+            40%,
+            100% {
+                transform: translateY(0)
+            }
+            20% {
+                transform: translateY(-10px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">Djloba</a>
+        <div id="toggle" onclick="toggle()"></div>
+        <ul>
+            <li>
+                <a href="index.html" id="act">Home</a>
+            </li>
+            <li>
+                <a href="#services">Service</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner" id="sec">
+        <div class="content">
+            <h2>
+                Hello world
+                <br>
+                <div class="loader"> i'm
+                    <span style="--i:1;">B</span>
+                    <span style="--i:2;">e</span>
+                    <span style="--i:3;">n</span>
+                    <span style="--i:4;">j</span>
+                    <span style="--i:5;">a</span>
+                    <span style="--i:6;">m</span>
+                    <span style="--i:7;">i</span>
+                    <span style="--i:8;">n</span>
+                    <span> Amoussou</span>
+
+                </div>
+            </h2>
+            <p>
+                I am an award-winning full-stack web developer and UI/UX javascript specialist check out my articles,Vue js, React and React
+                Native UI component at the codelaboratory. Feel free a look at my lastest projects on the web Portfolio page...
+                <!-- <i>Rabache</i> -->
+            </p>
+            <a href="#" id="encore">En savoir plus</a>
+            <br>
+        </div>
+        <ul class="sci">
+            <li>
+                <a href="#">Fb</a>
+            </li>
+            <!-- facebook.com/ben.amousen? -->
+            <li>
+                <a href="#">Li</a>
+            </li>
+            <li>
+                <a href="#">Tw</a>
+            </li>
+
+        </ul>
+        <!-- <nav class="scroll">
+            <span style="--i:1;">S</span>
+            <span style="--i:2;">c</span>
+            <span style="--i:3;">r</span>
+            <span style="--i:4;">o</span>
+            <span style="--i:5;">l</span>
+            <span style="--i:6;">l</span>
+            <span style="--i:7;"> </span><br>
+            <span style="--i:8;">d</span>
+            <span style="--i:8;">o</span>
+            <span style="--i:8;">w</span>
+            <span style="--i:8;">n</span>
+        </nav> -->
+    </section>
+    <section class="service" id="services">
+        <div class=" loader-service">
+            <span style="--i:1;">S</span>
+            <span style="--i:2;">e</span>
+            <span style="--i:3;">r</span>
+            <span style="--i:4;">v</span>
+            <span style="--i:5;">i</span>
+            <span style="--i:6;">c</span>
+            <span style="--i:7;">e</span>
+            <span style="--i:8;">s</span>
+
+        </div>
+        <div class="bloc">
+            <div class="card text-center">
+                <div class="oval">
+                    <img class="card-img-top" src="image/web-design.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Web Design</h3>
+                    <p class="card-text">
+                        site vitrine & e-commerce L'equipe Djloba est là pour vous accompagner dans la creation de site web.
+                    </p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="oval">
+                    <img class="card-img-top" src="image/graphics-design.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Graphics Design</h3>
+                    <p class="card-text">
+                        <!-- Support de communication Création de logo, flyers, plaquettes, cartes de visite, maquette Web -->
+                        I do web design and product desinging for firms & people
+                    </p>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="oval">
+                    <img class="card-img-top" src="image/marketing.png" alt="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Marketing</h3>
+                    <p class="card-text">Trouver de nouveaux clients Notre équipe experts s'occupe de vous trouver des clients quzlifiés grace
+
+                    </p>
+                    <img src="image/services-right-dec.png" alt="" srcset="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="skills">
+        <div class=" loader-service">
+            <span style="--i:1;">s</span>
+            <span style="--i:2;">k</span>
+            <span style="--i:3;">i</span>
+            <span style="--i:4;">l</span>
+            <span style="--i:5;">l</span>
+            <span style="--i:6;">s</span>
+        </div>
+        <div>
+
+            <!-- <progress  max="98"></progress> -->
+            <label for="HTML">HTML</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar html" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+            <label for="HTML">CSS</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar css" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+            <label for="HTML">Js</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar js" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+            <label for="HTML">React & Mongodb</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar react" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+            <label for="">Node express js</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                    <span class="sr-only">40% Complete</span>
+                </div>
+            </div>
+            <label for="">php & mysql/sql</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar php" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                    <span class="sr-only">80% Complete</span>
+                </div>
+            </div>
+            <label for="HTML">Boostrap</label>
+            <div class="progress progress-striped active">
+                <div class="progress-bar css" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                    <span class="sr-only">30% Complete</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class=" loader-service">
+            <span style="--i:1;">p</span>
+            <span style="--i:2;">o</span>
+            <span style="--i:3;">r</span>
+            <span style="--i:4;">t</span>
+            <span style="--i:5;">f</span>
+            <span style="--i:6;">o</span>
+            <span style="--i:7;">l</span>
+            <span style="--i:8;">i</span>
+            <span style="--i:8;">0</span>
+
+        </div>
+        <div class="port">
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+            <!-- <div class=" loader-service">
+                    <span style="--i:1;">c</span>
+                    <span style="--i:2;">o</span>
+                    <span style="--i:3;">n</span>
+                    <span style="--i:4;">t</span>
+                    <span style="--i:5;">a</span>
+                    <span style="--i:6;">c</span>
+                    <span style="--i:7;">t</span>
+            </div> -->
+
+    </section>
+</body>
+
+</html>
